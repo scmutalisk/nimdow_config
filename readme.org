@@ -2,6 +2,6 @@
 
 [[https://github.com/avahe-kellenberger/nimdow][Nimdow]] is a tiling window manager written in [[https://nim-lang.org][Nim]] for X11.
 
-Main config can be found [[https://github.com/scmutalisk/nimdow_config/blob/master/config.toml][here]].
+Main config can be found [[https://github.com/scmutalisk/nimdow_config/blob/master/config.toml][./config.toml]]
 
-Custom nimbar can be found [[https://github.com/scmutalisk/nimdow_config/blob/master/nimbar.nim][here]].
+Custom nimbar can be found [[https://github.com/scmutalisk/nimdow_config/blob/master/nimbar.nim][./nimbar.nim]]
