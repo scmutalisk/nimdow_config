@@ -1,6 +1,6 @@
 #+TITLE: Nimdow config
 
-[[https://github.com/avahe-kellenberger/nimdow][Nimdow]] is a tiling window manager written in [[https://nim-lang.org][Nim]] for Xorg
+My configurations for [[https://github.com/avahe-kellenberger/nimdow][nimdow]] tiling window manager written in [[https://nim-lang.org][Nim]]
 
 Main config file - [[./config.toml][config.toml]]
 
