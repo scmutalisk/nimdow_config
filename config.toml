@@ -1,0 +1,188 @@
+[[startProcess]]
+command = "pkill nimdow"
+keys = [ "Delete" ]
+modifiers = [ "super", "control" ]
+
+[[startProcess]]
+command = "thunar"
+keys = [ "m" ]
+modifiers = [ "super", "shift" ]
+
+[[startProcess]]
+command = "nimdow increaseMasterWidth"
+keys = [ "i" ]
+modifiers = [ "super"]
+
+[[startProcess]]
+command = "nimdow decreaseMasterWidth"
+keys = [ "d" ]
+modifiers = [ "super"]
+
+[[startProcess]]
+command = "qutebrowser"
+keys = [ "q" ]
+modifiers = [ "super", "shift" ]
+
+[[startProcess]]
+command = "librewolf"
+keys = [ "w" ]
+modifiers = [ "super", "shift" ]
+
+[[startProcess]]
+command = "firefox"
+keys = [ "f" ]
+modifiers = [ "super", "shift" ]
+
+[[startProcess]]
+command = "dmenu_run -h 24 -p 'Run: '"
+keys = [ "Return" ]
+modifiers = [ "super" ]
+
+[[startProcess]]
+command = "passmenu -h 24"
+keys = [ "p" ]
+modifiers = [ "super" ]
+
+[[startProcess]]
+command = "alacritty"
+keys = [ "Return" ]
+modifiers = [ "super", "shift" ]
+
+[[startProcess]]
+command = "emacs -mm"
+keys = [ "e" ]
+modifiers = [ "super", "shift" ]
+
+# --------- #
+# App Rules #
+# --------- #
+
+[[appRule]]
+instance = "pavucontrol"
+class = "Pavucontrol"
+monitor = 1
+state = "floating"
+
+# ---------- #
+# Auto Start #
+# ---------- #
+
+[autostart]
+exec = [
+  "xsetroot -cursor_name left_ptr",
+  "nitrogen --restore",
+  "gxkb",
+  "pidof -s redshift > /dev/null && killall redshift && redshift || redshift",
+  "xset s off -dpms",
+  "nm-applet --no-agent",
+  "pa-applet --disable-notifications",
+  "picom",
+  "pidof -s nimbar > /dev/null || ~/.config/nimdow/nimbar",
+]
+
+[settings]
+  # Window settings
+  gapSize = 24
+  borderWidth = 1
+  borderColorUnfocused = "#282a36"
+  borderColorFocused = "#50fa7b"
+  borderColorUrgent = "#ff5555"
+  # Bar settings
+  barHeight = 24
+  windowTitlePosition = "center"
+  barBackgroundColor = "#282a36"
+  barForegroundColor = "#f8f8f2"
+  barSelectionColor = "#50fa7b"
+  barUrgentColor = "#ff5555"
+  barFonts = [
+    "monospace:size=8:antialias=true",
+  ]
+  # General settings
+  loggingEnabled = true
+  reverseTagScrolling = false
+
+# Window manager controls
+[controls]
+  [controls.reloadConfig]
+  keys = [ "r" ]
+  modifiers = [ "super", "shift" ]
+
+  [controls.focusPrevious]
+  keys = [ "k" ]
+  modifiers = [ "super" ]
+
+  [controls.focusNext]
+  keys = [ "j" ]
+  modifiers = [ "super" ]
+
+  [controls.moveWindowPrevious]
+  keys = [ "k" ]
+  modifiers = [ "super", "shift" ]
+
+  [controls.moveWindowNext]
+  keys = [ "j" ]
+  modifiers = [ "super", "shift" ]
+
+  [controls.toggleFullscreen]
+  keys = [ "f" ]
+  modifiers = [ "super" ]
+
+  [controls.destroySelectedWindow]
+  keys = [ "c" ]
+  modifiers = [ "super", "shift" ]
+
+  [controls.goToPreviousTag]
+  keys = [ "w" ]
+  modifiers = [ "super" ]
+
+  [controls.moveWindowToPreviousTag]
+  keys = [ "w" ]
+  modifiers = [ "super", "shift" ]
+
+  [controls.focusPreviousMonitor]
+  keys = [ "comma" ]
+  modifiers = [ "super" ]
+
+  [controls.focusNextMonitor]
+  keys = [ "period" ]
+  modifiers = [ "super" ]
+
+  [controls.moveWindowToPreviousMonitor]
+  keys = [ "comma" ]
+  modifiers = [ "super", "shift" ]
+
+  [controls.moveWindowToNextMonitor]
+  keys = [ "period" ]
+  modifiers = [ "super", "shift" ]
+
+  [controls.increaseMasterCount]
+  keys = [ "z" ]
+  modifiers = [ "super" ]
+
+  [controls.decreaseMasterCount]
+  keys = [ "x" ]
+  modifiers = [ "super" ]
+
+  [controls.toggleFloating]
+  keys = [ "space" ]
+  modifiers = [ "super" ]
+
+  [controls.jumpToUrgentWindow]
+  keys = [ "u" ]
+  modifiers = [ "super" ]
+
+  [controls.goToTag]
+  keys = [ "1", "2", "3", "4", "5", "6", "7", "8", "9" ]
+  modifiers = [ "super" ]
+
+  [controls.moveWindowToTag]
+  keys = [ "1", "2", "3", "4", "5", "6", "7", "8", "9" ]
+  modifiers = [ "super", "shift" ]
+
+  [controls.toggleTagView]
+  keys = [ "1", "2", "3", "4", "5", "6", "7", "8", "9" ]
+  modifiers = [ "super", "control" ]
+
+  [controls.toggleWindowTag]
+  keys = [ "1", "2", "3", "4", "5", "6", "7", "8", "9" ]
+  modifiers = [ "super", "shift", "control" ]
