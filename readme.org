@@ -1,1 +1,3 @@
 #+TITLE: Nimdow configs
+
+[[link][http://localhost]]
