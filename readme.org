@@ -4,4 +4,4 @@
 
 Main config file - [[./config.toml][config.toml]]
 
-Custom nimbar file - [[https://github.com/scmutalisk/nimdow_config/blob/master/nimbar.nim][nimbar.nim]]
+Custom nimbar file - [[./nimbar.nim][nimbar.nim]]
